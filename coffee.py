@@ -1,28 +1,34 @@
 def how_much_coffee(events):
-    counter = 0
+    cups_of_coffee = 0
+
+    if len(events) == 0: return 0
 
     for event in events:
         if event == 'cw':
-            counter += 1
+            cups_of_coffee += 1
         elif event == 'CW':
-            counter += 2
+            cups_of_coffee += 2
         elif event == 'cat':
-            counter += 1
+            cups_of_coffee += 1
         elif event == 'CAT':
-            counter += 2
+            cups_of_coffee += 2
         elif event == 'dog':
-            counter += 1
+            cups_of_coffee += 1
         elif event == 'DOG':
-            counter += 2
+            cups_of_coffee += 2
         elif event == 'movie':
-            counter += 1
+            cups_of_coffee += 1
         else:
-            counter += 0
+            cups_of_coffee += 0
 
-    if counter > 3:
+    if cups_of_coffee > 3:
         print("You need extra sleep!!!")
+        return "You need extra sleep"
     else:
-        print(f'Drink {counter} cups of coffee')
+        print(f'Drink {cups_of_coffee} cups of coffee')
+        return cups_of_coffee
+
+
 
 
 how_much_coffee([])# return 0
