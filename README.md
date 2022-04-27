@@ -1,6 +1,6 @@
-##How much coffee
+## How much coffee
 
-#Description
+# Description
 Everybody know that you passed to much time awake during night time...
 Your task here is to define how much coffee you need to stay awake after your night. You will have to complete a function that takes an array of events in arguments, according to this list you will return the number of coffee you need to stay awake during the day time. Note: If the count exceed 3 please return 'You need extra sleep'.
 
